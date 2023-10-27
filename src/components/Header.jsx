@@ -63,106 +63,108 @@ const Header = () => {
   return (
     <React.Fragment>
       <AppBar position="staic">
-        <Toolbar
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            height: "1",
-            display: {
-              xs: "none",
-              sm: "flex",
-              md: "flex",
-              lg: "flex",
-              xl: "flex",
-            },
-          }}
-        >
-          <Box sx={{ display: "flex", alignItems: "center", marginLeft: 2 }}>
-            <Typography variant="p" sx={{ marginRight: 1 }}>
-              FAQ
-            </Typography>
-            <Separator />
-            <Typography variant="p" sx={{ marginRight: 1 }}>
-              Help Desk
-            </Typography>
-            <Separator />
-            <Typography variant="p" sx={{ marginLeft: 1 }}>
-              Login
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", marginRight: 2 }}>
-            <FacebookIcon sx={{ marginRight: 3 }} />
-            <YouTubeIcon sx={{ marginRight: 3 }} />
-            <InstagramIcon sx={{ marginRight: 3 }} />
-          </Box>
-        </Toolbar>
-        <Toolbar
-          sx={{
-            background: "#FFF",
-            height: "80px",
-            display: "flex",
-            justifyContent: "end",
-            gap: "10px",
-            display: {
-              xs: "none",
-              sm: "flex",
-              md: "flex",
-              lg: "flex",
-              xl: "flex",
-            },
-          }}
-        >
-          <Box sx={{ color: "black", display: "flex", gap: "10px" }}>
-            <Box>
-              <img
-                src={Call}
-                style={{
-                  width: "30px",
-                  marginTop: "5px",
-                }}
-              />
-            </Box>
-            <Box
+        <Box>
+          <Container>
+            <Toolbar
               sx={{
                 display: "flex",
-                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "center",
+                height: "1",
+                display: {
+                  xs: "none",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "flex",
+                  xl: "flex",
+                },
               }}
             >
-              <Typography
-                variant="caption"
-                sx={{
-                  color: "#AAA8A8",
-                }}
-              >
-                CALL US TODAY{" "}
-              </Typography>
-              <Typography variant="caption">+91 9999888877</Typography>
-            </Box>
-          </Box>
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                <Typography variant="p">FAQ</Typography>
+                <Separator />
+                <Typography variant="p">Help Desk</Typography>
+                <Separator />
+                <Typography variant="p">Login</Typography>
+              </Box>
+              <Box sx={{ display: "flex", gap: "10px" }}>
+                <FacebookIcon />
+                <YouTubeIcon />
+                <InstagramIcon />
+              </Box>
+            </Toolbar>
+          </Container>{" "}
+        </Box>
 
-          <Box sx={{ color: "black", display: "flex", gap: "10px" }}>
-            <Box>
-              <AccessTimeOutlinedIcon fontSize="large" height="60px" />
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <Typography
-                variant="caption"
-                sx={{
-                  color: "#AAA8A8",
-                }}
-              >
-                WE ARE OPEN!
-              </Typography>
-              <Typography variant="caption">Mon-Fri 8:00-16:00</Typography>
-            </Box>
-          </Box>
-        </Toolbar>
+       <Box sx={{background: "#FFF",}}>
+       <Container>
+       <Toolbar
+       sx={{
+         height: "80px",
+         display: "flex",
+         justifyContent: "end",
+         gap: "10px",
+         display: {
+           xs: "none",
+           sm: "flex",
+           md: "flex",
+           lg: "flex",
+           xl: "flex",
+         },
+       }}
+     >
+       <Box sx={{ color: "black", display: "flex", gap: "10px" }}>
+         <Box>
+           <img
+             src={Call}
+             style={{
+               width: "30px",
+               marginTop: "5px",
+             }}
+           />
+         </Box>
+         <Box
+           sx={{
+             display: "flex",
+             flexDirection: "column",
+           }}
+         >
+           <Typography
+             variant="caption"
+             sx={{
+               color: "#AAA8A8",
+             }}
+           >
+             CALL US TODAY{" "}
+           </Typography>
+           <Typography variant="caption">+91 9999888877</Typography>
+         </Box>
+       </Box>
+
+       <Box sx={{ color: "black", display: "flex", gap: "10px" }}>
+         <Box>
+           <AccessTimeOutlinedIcon fontSize="large" height="60px" />
+         </Box>
+         <Box
+           sx={{
+             display: "flex",
+             flexDirection: "column",
+           }}
+         >
+           <Typography
+             variant="caption"
+             sx={{
+               color: "#AAA8A8",
+             }}
+           >
+             WE ARE OPEN!
+           </Typography>
+           <Typography variant="caption">Mon-Fri 8:00-16:00</Typography>
+         </Box>
+       </Box>
+     </Toolbar>
+       </Container>
+       </Box>
         <Toolbar
           sx={{
             background: "#202C45",
@@ -170,33 +172,35 @@ const Header = () => {
             width: "auto",
           }}
         >
-          <Container sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Box sx={{ display: "flex", gap: "10px" }}>
-              {PRODUCTS.map((product) => (
+          <Container>
+            <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+              <Box sx={{ display: "flex", gap: "10px" }}>
+                {PRODUCTS.map((product) => (
+                  <Button
+                    key={product.id}
+                    size="large"
+                    sx={{
+                      bgcolor: "#24497D",
+                      borderRadius: "20px",
+                      color: "#fff",
+                      "&:hover": { bgcolor: "#fff", color: "#202C45" },
+                    }}
+                  >
+                    {product.label}
+                  </Button>
+                ))}
+              </Box>
+              <Box sx={{ display: "flex" }}>
                 <Button
-                  key={product.id}
-                  size="large"
                   sx={{
-                    bgcolor: "#24497D",
-                    borderRadius: "20px",
+                    bgcolor: "#2D8EFF",
                     color: "#fff",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
                   }}
                 >
-                  {product.label}
+                  NEW BATCH
                 </Button>
-              ))}
-            </Box>
-            <Box sx={{ display: "flex" }}>
-              <Button
-                sx={{
-                  bgcolor: "#2D8EFF",
-                  color: "#fff",
-                  "&:hover": { bgcolor: "#fff", color: "#202C45" },
-                }}
-              >
-                NEW BATCH
-              </Button>
+              </Box>
             </Box>
           </Container>
         </Toolbar>
