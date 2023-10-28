@@ -83,36 +83,45 @@ function Footer() {
                   magna aliqua. <br />
                 </Typography>
                 <Box sx={{ display: "flex", gap: "20px" }}>
-                  <FacebookRoundedIcon
-                    sx={{
-                      color: "white",
-                      bgcolor: "#2D8EFF",
-                      borderRadius: "100%",
-                      height: "50px",
-                      width: "50px",
-                      padding: "10px",
-                    }}
-                  />
-                  <InstagramIcon
-                    sx={{
-                      color: "white",
-                      bgcolor: "#2D8EFF",
-                      borderRadius: "50%",
-                      height: "50px",
-                      width: "50px",
-                      padding: "10px",
-                    }}
-                  />
-                  <YouTubeIcon
-                    sx={{
-                      color: "white",
-                      bgcolor: "#2D8EFF",
-                      borderRadius: "50%",
-                      height: "50px",
-                      width: "50px",
-                      padding: "10px",
-                    }}
-                  />
+                <a href="https://www.facebook.com" target="_blank">
+                <FacebookRoundedIcon
+                  sx={{
+                    color: "white",
+                    bgcolor: "#2D8EFF",
+                    borderRadius: "100%",
+                    height: "50px",
+                    width: "50px",
+                    padding: "10px",
+                  }}
+                />
+              </a>
+              
+              <a href="https://www.instagram.com" target="_blank">
+                <InstagramIcon
+                  sx={{
+                    color: "white",
+                    bgcolor: "#2D8EFF",
+                    borderRadius: "50%",
+                    height: "50px",
+                    width: "50px",
+                    padding: "10px",
+                  }}
+                />
+              </a>
+              
+              <a href="https://www.youtube.com" target="_blank">
+                <YouTubeIcon
+                  sx={{
+                    color: "white",
+                    bgcolor: "#2D8EFF",
+                    borderRadius: "50%",
+                    height: "50px",
+                    width: "50px",
+                    padding: "10px",
+                  }}
+                />
+              </a>
+              
                 </Box>
               </Box>
             </Grid>
@@ -355,6 +364,7 @@ function Footer() {
                       padding: "100",
                       height: "40px",
                       width: "40px",
+                      marginBottom: "5px"
                     }}
                   />
                 </Button>

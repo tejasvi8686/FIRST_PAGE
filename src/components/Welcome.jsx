@@ -206,7 +206,7 @@ export default function Welcome() {
                       for the future. We care for children, <br />
                       protect heir welfare, and prepare <br />
                     </Typography>
-                    <Box sx={{}}>
+                    <Box >
                     <Button
                       sx={{
                         bgcolor: "#202C45",
@@ -243,7 +243,7 @@ export default function Welcome() {
                       for the future. We care for children, <br />
                       protect heir welfare, and prepare <br />
                     </Typography>
-                    <Box sx={{}}>
+                    <Box >
                     <Button
                       sx={{
                         bgcolor: "#202C45",
