@@ -17,7 +17,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import DrawerComp from "./DrawerComp";
 
 const Navbar = () => {
-    const PAGES = [
+  const PAGES = [
     "Home",
     "Courses",
     "Videos",
@@ -61,13 +61,7 @@ const Navbar = () => {
                   value={value}
                   onChange={(e, value) => setValue(value)}
                 >
-
-                {
-                  PAGES.map((page, index)=>(
-                    <Tab label={page.name} key={index}
-                    />
-                  ))
-                }
+                  {}
                   <Tab label="Home" />
                   <Tab
                     label="Courses"
