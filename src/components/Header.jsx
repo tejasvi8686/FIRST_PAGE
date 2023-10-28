@@ -30,13 +30,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                display: {
-                  xs: "none",
-                  sm: "flex",
-                  md: "flex",
-                  lg: "flex",
-                  xl: "flex",
-                },
+
               }}
             >
               <Box sx={{ display: "flex", alignItems: "center",color: "#fff" }}>
@@ -69,13 +63,7 @@ const Header = () => {
                 display: "flex",
                 justifyContent: "end",
                 gap: "10px",
-                display: {
-                  xs: "none",
-                  sm: "flex",
-                  md: "flex",
-                  lg: "flex",
-                  xl: "flex",
-                },
+    
               }}
             >
               <Box sx={{ color: "black", display: "flex", gap: "10px" }}>
