@@ -3,7 +3,7 @@ import { Toolbar, Typography, Box, SvgIcon } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import Call from "../Assets/call.png";
+import PhoneIcon from '@mui/icons-material/Phone';
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import Container from "@mui/material/Container";
 
@@ -68,13 +68,7 @@ const Header = () => {
             >
               <Box sx={{ color: "black", display: "flex", gap: "10px" }}>
                 <Box>
-                  <img
-                    src={Call}
-                    style={{
-                      width: "30px",
-                      marginTop: "5px",
-                    }}
-                  />
+                <PhoneIcon fontSize="large" height="60px" />
                 </Box>
                 <Box
                   sx={{
