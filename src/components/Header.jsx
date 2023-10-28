@@ -22,7 +22,7 @@ const Separator = () => (
 const Header = () => {
   return (
     <React.Fragment>
-      <Box  >
+      <Box position="static" >
         <Box sx={{bgcolor:"#2D8EFF"}}>
           <Container>
             <Toolbar

@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <AppBar position="static" sx={{ bgcolor: "#202C45" }}>
+      <AppBar position="sticky" sx={{ bgcolor: "#202C45" }}>
         <Toolbar sx={{ height: "90px" }}>
           {isMatch ? (
             <Box>
@@ -47,7 +47,7 @@ const Navbar = () => {
                   label="Home"
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -61,7 +61,7 @@ const Navbar = () => {
                   endIcon={<ArrowDropDownIcon />}
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -84,7 +84,7 @@ const Navbar = () => {
                   label="Videos"
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -94,7 +94,7 @@ const Navbar = () => {
                   label="Contact Us"
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -104,7 +104,7 @@ const Navbar = () => {
                   label="About Us"
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -114,7 +114,7 @@ const Navbar = () => {
                   label="Test Series "
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -124,7 +124,7 @@ const Navbar = () => {
                   label="Study Material"
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -134,7 +134,7 @@ const Navbar = () => {
                   label="Student Login"
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
@@ -144,7 +144,7 @@ const Navbar = () => {
                   label="Blog"
                   sx={{
                     bgcolor: "#24497D",
-                    marginRight: "8px",
+                    marginRight: "10px",
                     color: "#fff",
                     borderRadius :"50px",
                     "&:hover": { bgcolor: "#fff", color: "#202C45" },
