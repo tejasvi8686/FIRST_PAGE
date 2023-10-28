@@ -10,8 +10,6 @@ import IMG1 from "../assets/ss2.png";
 import IMG2 from "../assets/ss3.png";
 import NET from "../assets/NET.png";
 
-
-
 const Line = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -36,9 +34,13 @@ export default function Courses() {
           <Grid
             container
             spacing={2}
-            sx={{ marginTop: "35px", marginBottom: "50px", display:"flex", }}
+            sx={{
+              marginTop: "35px",
+              marginBottom: "50px",
+              display: "flex",
+            }}
           >
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Typography variant="h5">WELCOME TO OUR</Typography>
                 <Typography variant="h5" sx={{ color: "#2D8EFF" }}>
@@ -63,7 +65,6 @@ export default function Courses() {
                   Istees recusandae laboriosam <br />
                 </Typography>
               </Box>
-
               <Box sx={{ marginTop: "35px" }}>
                 <Button
                   sx={{
@@ -74,12 +75,12 @@ export default function Courses() {
                     "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
                   }}
                 >
-                View Details
+                  View Details
                 </Button>
               </Box>
             </Grid>
 
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
               <Card>
                 <CardActionArea>
                   <CardMedia
@@ -91,7 +92,7 @@ export default function Courses() {
                   <CardContent>
                     <Typography variant="h6">EXPERIENCE YOURSELF</Typography>
                     <Line />
-                    <Typography variant="body2" color="#9A9696">
+                    <Typography variant="body2" sx={{ color: "#9A9696" }}>
                       We care for children, protect <br />
                       their welfare, and prepare them <br />
                       for the future <br />
@@ -100,7 +101,7 @@ export default function Courses() {
                 </CardActionArea>
               </Card>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
               <Card>
                 <CardActionArea>
                   <CardMedia
@@ -112,7 +113,7 @@ export default function Courses() {
                   <CardContent>
                     <Typography variant="h6">ONLINE LEARNING</Typography>
                     <Line />
-                    <Typography variant="body2" color="#9A9696">
+                    <Typography variant="body2" sx={{ color: "#9A9696" }}>
                       We care for children, protect <br />
                       their welfare, and prepare them <br />
                       for the future <br />
@@ -121,7 +122,7 @@ export default function Courses() {
                 </CardActionArea>
               </Card>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
               <Card>
                 <CardActionArea>
                   <CardMedia
@@ -133,7 +134,7 @@ export default function Courses() {
                   <CardContent>
                     <Typography variant="h6">MASTERY LEARNING</Typography>
                     <Line />
-                    <Typography variant="body2" color="#9A9696">
+                    <Typography variant="body2" sx={{ color: "#9A9696" }}>
                       We care for children, protect <br />
                       their welfare, and prepare them <br />
                       for the future <br />
@@ -152,13 +153,18 @@ export default function Courses() {
             sx={{
               display: "flex",
               justifyContent: "space-between",
+              flexDirection: { xs: "column", sm: "row" },
+              alignItems: { xs: "center", sm: "flex-start" },
+              marginBottom: { xs: "20px", sm: "70px" },
             }}
           >
             <Box
               sx={{
                 display: "flex",
+                gap: { xs: "5px", sm: "0" },
                 flexDirection: "column",
-                marginTop: "100px",
+                alignItems: { xs: "center", sm: "flex-start" },
+                marginTop: { xs: "20px", sm: "100px" },
               }}
             >
               <Box sx={{ display: "flex", gap: "5px" }}>
@@ -166,7 +172,6 @@ export default function Courses() {
                 <Typography variant="h4" sx={{ color: "#2D8EFF" }}>
                   COURSES
                 </Typography>
-                
               </Box>
               <Line />
             </Box>
@@ -178,18 +183,18 @@ export default function Courses() {
                   color: "#FFFFFF",
                   borderRadius: "1",
                   padding: "10px 30px",
-                  marginTop: "100px",
+                  marginTop: { xs: "20px", sm: "100px" },
                   "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
                 }}
               >
-              View All
+                View All
               </Button>
             </Box>
           </Box>
 
           <Grid container spacing={2}>
-            <Grid item xs={3}>
-              <Card sx={{ marginTop: "70px", marginBottom: "80px" }}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card sx={{ marginTop: "20px", marginBottom: "70px" }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -200,33 +205,33 @@ export default function Courses() {
                   <CardContent>
                     <Typography variant="h6">CSIR-NET/JRF</Typography>
                     <Line />
-                    <Typography variant="body2" color="#9A9696">
+                    <Typography variant="body2" sx={{ color: "#9A9696" }}>
                       We care for children, protect <br />
                       their welfare, and prepare them <br />
                       for the future. We care for children, <br />
-                      protect heir welfare, and prepare <br />
+                      protect their welfare, and prepare <br />
                     </Typography>
-                    <Box >
-                    <Button
-                      sx={{
-                        bgcolor: "#202C45",
-                        color: "#FFFFFF",
-                        borderRadius: "1",
-                        marginTop: "35px",
-                        padding: "5px 15px",
-                        "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
-                      }}
-                    >
-                    VIEW DETAILS
-                    </Button>
-                  </Box>
+                    <Box>
+                      <Button
+                        sx={{
+                          bgcolor: "#202C45",
+                          color: "#FFFFFF",
+                          borderRadius: "1",
+                          marginTop: "20px",
+                          padding: "5px 15px",
+                          "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
+                        }}
+                      >
+                        VIEW DETAILS
+                      </Button>
+                    </Box>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
 
-            <Grid item xs={3}>
-              <Card sx={{ marginTop: "70px", marginBottom: "80px" }}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card sx={{ marginTop: "20px", marginBottom: "70px" }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -237,33 +242,33 @@ export default function Courses() {
                   <CardContent>
                     <Typography variant="h6">CSIR-NET/JRF</Typography>
                     <Line />
-                    <Typography variant="body2" color="#9A9696">
+                    <Typography variant="body2" sx={{ color: "#9A9696" }}>
                       We care for children, protect <br />
                       their welfare, and prepare them <br />
                       for the future. We care for children, <br />
-                      protect heir welfare, and prepare <br />
+                      protect their welfare, and prepare <br />
                     </Typography>
-                    <Box >
-                    <Button
-                      sx={{
-                        bgcolor: "#202C45",
-                        color: "#FFFFFF",
-                        borderRadius: "1",
-                        marginTop: "35px",
-                        padding: "5px 15px",
-                        "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
-                      }}
-                    >
-                    VIEW DETAILS
-                    </Button>
-                  </Box>
+                    <Box>
+                      <Button
+                        sx={{
+                          bgcolor: "#202C45",
+                          color: "#FFFFFF",
+                          borderRadius: "1",
+                          marginTop: "20px",
+                          padding: "5px 15px",
+                          "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
+                        }}
+                      >
+                        VIEW DETAILS
+                      </Button>
+                    </Box>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
 
-            <Grid item xs={3}>
-              <Card sx={{ marginTop: "70px", marginBottom: "80px" }}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card sx={{ marginTop: "20px", marginBottom: "70px" }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -274,33 +279,33 @@ export default function Courses() {
                   <CardContent>
                     <Typography variant="h6">CSIR-NET/JRF</Typography>
                     <Line />
-                    <Typography variant="body2" color="#9A9696">
+                    <Typography variant="body2" sx={{ color: "#9A9696" }}>
                       We care for children, protect <br />
                       their welfare, and prepare them <br />
                       for the future. We care for children, <br />
-                      protect heir welfare, and prepare <br />
+                      protect their welfare, and prepare <br />
                     </Typography>
-                    <Box sx={{}}>
-                    <Button
-                      sx={{
-                        bgcolor: "#202C45",
-                        color: "#FFFFFF",
-                        borderRadius: "1",
-                        marginTop: "35px",
-                        padding: "5px 15px",
-                        "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
-                      }}
-                    >
-                    VIEW DETAILS
-                    </Button>
-                  </Box>
+                    <Box>
+                      <Button
+                        sx={{
+                          bgcolor: "#202C45",
+                          color: "#FFFFFF",
+                          borderRadius: "1",
+                          marginTop: "20px",
+                          padding: "5px 15px",
+                          "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
+                        }}
+                      >
+                        VIEW DETAILS
+                      </Button>
+                    </Box>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
 
-            <Grid item xs={3}>
-              <Card sx={{ marginTop: "70px", marginBottom: "80px" }}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card sx={{ marginTop: "20px", marginBottom: "70px" }}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -311,26 +316,26 @@ export default function Courses() {
                   <CardContent>
                     <Typography variant="h6">CSIR-NET/JRF</Typography>
                     <Line />
-                    <Typography variant="body2" color="#9A9696">
+                    <Typography variant="body2" sx={{ color: "#9A9696" }}>
                       We care for children, protect <br />
                       their welfare, and prepare them <br />
                       for the future. We care for children, <br />
-                      protect heir welfare, and prepare <br />
+                      protect their welfare, and prepare <br />
                     </Typography>
-                    <Box sx={{}}>
-                    <Button
-                      sx={{
-                        bgcolor: "#202C45",
-                        color: "#FFFFFF",
-                        borderRadius: "1",
-                        marginTop: "35px",
-                        padding: "5px 15px",
-                        "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
-                      }}
-                    >
-                    VIEW DETAILS
-                    </Button>
-                  </Box>
+                    <Box>
+                      <Button
+                        sx={{
+                          bgcolor: "#202C45",
+                          color: "#FFFFFF",
+                          borderRadius: "1",
+                          marginTop: "20px",
+                          padding: "5px 15px",
+                          "&:hover": { bgcolor: "#202C45", color: "#FFFFFF" },
+                        }}
+                      >
+                        VIEW DETAILS
+                      </Button>
+                    </Box>
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -338,8 +343,6 @@ export default function Courses() {
           </Grid>
         </Container>
       </Box>
-
-
     </Box>
   );
 }

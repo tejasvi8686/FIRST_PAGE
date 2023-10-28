@@ -49,247 +49,235 @@ function Footer() {
 
   return (
     <Box>
-      <Box sx={{ bgcolor: "#202C45" }}>
-        <Container>
-          <Grid
-            container
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              gap: "80px",
-            }}
-          >
-            <Grid item>
-              <Box
-                sx={{
-                  marginTop: "80px",
-                  marginBottom: "70px",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "30px",
-                }}
-              >
-                <Typography
-                  variant="h4"
-                  sx={{ color: "#FFFFFF", fontWeight: "700" }}
-                >
-                  LOGO
-                </Typography>
-                <Typography variant="p" sx={{ color: "#FFFFFF" }}>
-                  Lorem ipsum dolor sit amet, <br />
-                  consectetur adipisicing elit, <br />
-                  sed do eiusmod tempor <br />
-                  incididunt ut labore et dolore <br />
-                  magna aliqua. <br />
-                </Typography>
-                <Box sx={{ display: "flex", gap: "20px" }}>
-                <a href="https://www.facebook.com" target="_blank">
-                <FacebookRoundedIcon
-                  sx={{
-                    color: "white",
-                    bgcolor: "#2D8EFF",
-                    borderRadius: "100%",
-                    height: "50px",
-                    width: "50px",
-                    padding: "10px",
-                  }}
-                />
-              </a>
-              
-              <a href="https://www.instagram.com" target="_blank">
-                <InstagramIcon
-                  sx={{
-                    color: "white",
-                    bgcolor: "#2D8EFF",
-                    borderRadius: "50%",
-                    height: "50px",
-                    width: "50px",
-                    padding: "10px",
-                  }}
-                />
-              </a>
-              
-              <a href="https://www.youtube.com" target="_blank">
-                <YouTubeIcon
-                  sx={{
-                    color: "white",
-                    bgcolor: "#2D8EFF",
-                    borderRadius: "50%",
-                    height: "50px",
-                    width: "50px",
-                    padding: "10px",
-                  }}
-                />
-              </a>
-              
-                </Box>
-              </Box>
-            </Grid>
-
-            <Grid item>
-              <Box
-                sx={{
-                  marginTop: "80px",
-                  marginBottom: "70px",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "20px",
-                }}
-              >
-                <Typography
-                  variant="h4"
-                  sx={{ color: "white", fontWeight: "400" }}
-                >
-                  Courses
-                </Typography>
-                <Typography variant="p" sx={{ color: "white" }}>
-                  HTML & CSS
-                </Typography>
-                <Typography variant="p" sx={{ color: "white" }}>
-                  Java
-                </Typography>
-                <Typography variant="p" sx={{ color: "white" }}>
-                  Python
-                </Typography>
-                <Typography variant="p" sx={{ color: "white" }}>
-                  Power Point
-                </Typography>
-                <Typography variant="p" sx={{ color: "white" }}>
-                  MS-Office
-                </Typography>
-              </Box>
-            </Grid>
-
-            <Grid item>
-              <Box
-                sx={{
-                  marginTop: "80px",
-                  marginBottom: "70px",
-                  display: "flex",
-                  marginBottom: "70px",
-                  flexDirection: "column",
-                  gap: "8px",
-                }}
-              >
-                <Typography
-                  variant="h4"
-                  sx={{ color: "white", fontWeight: "400" }}
-                >
-                  Usefull Links
-                </Typography>
-                <FormControl component="fieldset">
-                  <FormGroup
-                    row
-                    sx={{ display: "flex", flexDirection: "column" }}
-                  >
-                    <FormControlLabel
-                      sx={{ color: "#fff" }}
-                      control={
-                        <Checkbox
-                          checked={checked.col1}
-                          onChange={handleCheckboxChange}
-                          name="col1"
-                        />
-                      }
-                      label="About Us"
-                    />
-                    <FormControlLabel
-                      sx={{ color: "#fff" }}
-                      control={
-                        <Checkbox
-                          checked={checked.col2}
-                          onChange={handleCheckboxChange}
-                          name="col2"
-                        />
-                      }
-                      label="Blog"
-                    />
-                    <FormControlLabel
-                      sx={{ color: "#fff" }}
-                      control={
-                        <Checkbox
-                          checked={checked.col3}
-                          onChange={handleCheckboxChange}
-                          name="col3"
-                        />
-                      }
-                      label="Video"
-                    />
-                    <FormControlLabel
-                      sx={{ color: "#fff" }}
-                      control={
-                        <Checkbox
-                          checked={checked.col4}
-                          onChange={handleCheckboxChange}
-                          name="col4"
-                        />
-                      }
-                      label="Courses"
-                    />
-                    <FormControlLabel
-                      sx={{ color: "#fff" }}
-                      control={
-                        <Checkbox
-                          checked={checked.col5}
-                          onChange={handleCheckboxChange}
-                          name="col5"
-                        />
-                      }
-                      label="Student"
-                    />
-                  </FormGroup>
-                </FormControl>
-              </Box>
-            </Grid>
-
-            <Grid item>
-              <Box
-                sx={{
-                  marginTop: "80px",
-                  marginBottom: "70px",
-                  display: "flex",
-                  bgcolor: "#2D8EFF",
-                  gap: "15px",
-                  alignItems: "center",
-                  padding: "95px",
-                }}
-              >
-                <Box>
-                  <CallRoundedIcon
+    <Box>
+    <Box sx={{ bgcolor: "#202C45" }}>
+      <Container>
+        <Grid
+          container
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <Grid item>
+            <Box
+              sx={{
+                marginTop: "80px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "30px",
+              }}
+            >
+              <Typography variant="h4" sx={{ color: "#FFFFFF", fontWeight: "700" }}>
+                LOGO
+              </Typography>
+              <Typography variant="p" sx={{ color: "#FFFFFF" }}>
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipisicing elit, <br />
+                sed do eiusmod tempor <br />
+                incididunt ut labore et dolore <br />
+                magna aliqua. <br />
+              </Typography>
+              <Box sx={{ display: "flex", gap: "20px" }}>
+                <a href="https://www.facebook.com">
+                  <FacebookRoundedIcon
                     sx={{
-                      color: "#2D8EFF",
-                      bgcolor: "#fff",
+                      color: "white",
+                      bgcolor: "#2D8EFF",
+                      borderRadius: "100%",
+                      height: "50px",
+                      width: "50px",
+                      padding: "10px",
+                    }}
+                  />
+                </a>
+  
+                <a href="https://www.instagram.com" target="_blank">
+                  <InstagramIcon
+                    sx={{
+                      color: "white",
+                      bgcolor: "#2D8EFF",
                       borderRadius: "50%",
                       height: "50px",
                       width: "50px",
                       padding: "10px",
                     }}
                   />
-                </Box>
-                <Box
+                </a>
+  
+                <a href="https://www.youtube.com" target="_blank">
+                  <YouTubeIcon
+                    sx={{
+                      color: "white",
+                      bgcolor: "#2D8EFF",
+                      borderRadius: "50%",
+                      height: "50px",
+                      width: "50px",
+                      padding: "10px",
+                    }}
+                  />
+                </a>
+              </Box>
+            </Box>
+          </Grid>
+  
+          <Grid item>
+            <Box
+              sx={{
+                marginTop: "80px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+              }}
+            >
+              <Typography variant="h4" sx={{ color: "white", fontWeight: "400" }}>
+                Courses
+              </Typography>
+              <Typography variant="p" sx={{ color: "white" }}>
+                HTML & CSS
+              </Typography>
+              <Typography variant="p" sx={{ color: "white" }}>
+                Java
+              </Typography>
+              <Typography variant="p" sx={{ color: "white" }}>
+                Python
+              </Typography>
+              <Typography variant="p" sx={{ color: "white" }}>
+                Power Point
+              </Typography>
+              <Typography variant="p" sx={{ color: "white" }}>
+                MS-Office
+              </Typography>
+            </Box>
+          </Grid>
+  
+          <Grid item>
+            <Box
+              sx={{
+                marginTop: "80px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "8px",
+              }}
+            >
+              <Typography variant="h4" sx={{ color: "white", fontWeight: "400" }}>
+                Useful Links
+              </Typography>
+              <FormControl component="fieldset">
+                <FormGroup
+                  row
+                  sx={{ display: "flex", flexDirection: "column" }}
+                >
+                  <FormControlLabel
+                    sx={{ color: "#fff" }}
+                    control={
+                      <Checkbox
+                        checked={checked.col1}
+                        onChange={handleCheckboxChange}
+                        name="col1"
+                      />
+                    }
+                    label="About Us"
+                  />
+                  <FormControlLabel
+                    sx={{ color: "#fff" }}
+                    control={
+                      <Checkbox
+                        checked={checked.col2}
+                        onChange={handleCheckboxChange}
+                        name="col2"
+                      />
+                    }
+                    label="Blog"
+                  />
+                  <FormControlLabel
+                    sx={{ color: "#fff" }}
+                    control={
+                      <Checkbox
+                        checked={checked.col3}
+                        onChange={handleCheckboxChange}
+                        name="col3"
+                      />
+                    }
+                    label="Video"
+                  />
+                  <FormControlLabel
+                    sx={{ color: "#fff" }}
+                    control={
+                      <Checkbox
+                        checked={checked.col4}
+                        onChange={handleCheckboxChange}
+                        name="col4"
+                      />
+                    }
+                    label="Courses"
+                  />
+                  <FormControlLabel
+                    sx={{ color: "#fff" }}
+                    control={
+                      <Checkbox
+                        checked={checked.col5}
+                        onChange={handleCheckboxChange}
+                        name="col5"
+                      />
+                    }
+                    label="Student"
+                  />
+                </FormGroup>
+              </FormControl>
+            </Box>
+          </Grid>
+  
+          <Grid item>
+            <Box
+              sx={{
+                marginTop: "80px",
+                marginBottom: "120px",
+                display: "flex",
+                bgcolor: "#2D8EFF",
+                gap: "15px",
+                alignItems: "center",
+                padding: "54px",
+              }}
+            >
+              <Box>
+                <CallRoundedIcon
                   sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "5px",
+                    color: "#2D8EFF",
+                    bgcolor: "#fff",
+                    borderRadius: "50%",
+                    height: "50px",
+                    width: "50px",
+                    padding: "10px",
+                  }}
+                />
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "5px",
+                }}
+              >
+                <Typography
+                  variant="p"
+                  sx={{
+                    color: "#fff",
                   }}
                 >
-                  <Typography
-                    variant="p"
-                    sx={{
-                      color: "#fff",
-                    }}
-                  >
-                    For More Details{" "}
-                  </Typography>
-                  <Typography variant="caption" sx={{ color: "#fff" }}>
-                    +91 9998888524
-                  </Typography>
-                </Box>
+                  For More Details{" "}
+                </Typography>
+                <Typography variant="caption" sx={{ color: "#fff" }}>
+                  +91 9998888524
+                </Typography>
               </Box>
-            </Grid>
+            </Box>
           </Grid>
-        </Container>
-      </Box>
+        </Grid>
+      </Container>
+    </Box>
+  </Box>
+  
 
       <Box>
         <Grid item>
@@ -361,7 +349,6 @@ function Footer() {
                       color:"#202C45",  
                       bgcolor: "#2D8EFF",
                       borderRadius: "50%",
-                      padding: "100",
                       height: "40px",
                       width: "40px",
                       marginBottom: "5px"
